@@ -78,7 +78,11 @@ server {
 ```bash
 docker compose up -d
 
-docker compose exec certbot   certbot certonly --webroot   --webroot-path=/var/www/certbot   -d www.test.com   --email your-email@gmail.com --agree-tos --no-eff-email
+docker compose exec certbot \
+  certbot certonly --webroot \
+  --webroot-path=/var/www/certbot \
+  -d www.test.com \
+  --email your-email@gmail.com --agree-tos --no-eff-email
 ```
 
 ---
